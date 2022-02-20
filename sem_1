@@ -1,0 +1,207 @@
+#1. 
+languages=['python', 'php', 'java']
+for i in languages:
+    print(i)
+    
+#2. 
+numbers=[1,2,3,4,5,6]
+s=0
+for i in numbers:
+    s=s+i
+print(s)
+
+#3
+def urj(k):
+    b = 1
+    for i in k:
+        n = n * i
+    return n
+
+numbers=[1,2,3,4,5,6]
+print(urj(numbers))
+
+#4. 
+def urj(k):
+    n=1
+    for i in k:
+        n=k[2]*k[-1]
+    return n
+
+numbers=[1,2,3,4,5,6]
+print(urj(numbers))
+
+#5.
+def max(k):
+    a=max(k)
+    return a
+def min(k):
+    b=min(k)
+    return b
+
+numbers=[1,2,3,4,5,6]
+print(max(numbers),min(numbers))
+
+#6.
+x=['ababa', 'dahs', '4224']
+s=0
+for i in x:
+    if len(i)>2 and i[0]==i[-1]:
+        s=s+1
+print(s)
+
+#7.
+def davkhardsan(a):
+    return list(dict.fromkeys(a))
+list = davkhardsan(['bbbbcb', 'abcd', 411, 111, 'abcd'])
+print(list) 
+
+#8.
+def empty(a):
+    if len(a):
+        print('Хоосон биш')
+    else:
+        print('Хоосон')
+a=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h']
+empty(a)    
+
+#9.
+a=[100,200,300,400,500,600,700,800,900,1000]
+del a[3:8:2]
+print(a)
+
+#10
+a=(1,2,3,4,5,6,7,8,9)
+
+
+#11.
+x=(1,2,3,4,5,6,7,8,9)
+y=list(x)
+y.append(2)
+x=tuple(y)
+print(x)
+
+#12.
+ x=(1,2,3,4,5,6,7,8,9)
+y=list(x)
+print(y[1],y[-2])
+
+
+#13.
+given_tuple = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+char = input('Enter a character to find: ')
+for ch in given_tuple:
+    if ch == char:
+        print('It is in the tuple')
+        break
+    else:
+        print('It is not in the tuple')
+        break
+
+#14.
+given_tuple = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h')
+for ch in given_tuple:
+    print(ch)
+
+#15. 
+x={'a', 'b', 'c', 'd'}
+y={'e', 'f', 'g', 'h'}
+print(x.union(y))
+
+#16. 
+x={'a', 'b', 'c', 'd'}
+y={'e', 'a', 'c', 'h'}
+print(x.intersection(y))
+
+
+#17. 
+x={'a', 'b', 'c', 'd'}
+print(len(x))
+
+
+#18.
+x={'a', 'b', 'c', 'e', 'f', 'g', 'd'}
+given=input()
+x.discard(given)
+print(x)
+
+
+#19. 
+x={'a', 'b', 'c', 'e', 'f', 'g', 'd'}
+y.clear()
+print(x)
+
+
+#20. 
+x={'a', 'b', 'c', 'e', 'f', 'g', 'd'}
+del x
+
+
+#21.
+dict1={
+    '2':20,
+    '3':30,
+    '5':50,
+    '4':40,
+    '1':10}
+x = sorted(dict1.items(), key=lambda x: x[1])    
+print(x)
+
+
+#22.
+dicti={
+    2:20,
+    3:30,
+    5:50,
+    4:40,
+    1:10}
+x=int(input())
+if x in dicti:
+    print(x,' dict-д байна.')
+else:
+    print(Байхгүй байна'')
+
+#23. 
+dict3 = { 
+    '2':20,
+    '3':30,
+    '5':50,
+    '4':40,
+    '1':10 } 
+x=int(input())
+if x in dict3.values():
+    print("Байна")
+else:
+    print("Байхгүй байна")
+
+
+#24. 
+dicta = { '2':20,
+    '3':30,
+    '5':50,
+    '4':40,
+    '1':10 } 
+for i in dicta:
+    print(i,dicta[i])
+
+
+#25.
+dicta= {
+    '4':40,
+    '1':10 } 
+dictb = {
+    'Model': '3', 
+    'Year': 2021 } 
+dicta.update(dictb)
+print(dicta)
+
+#26. 
+dicti = { '1':10,
+    '2':20,
+    '3':10,
+    '4':30,
+    '5':15,
+    '6':25} 
+s = 0
+for i in dict7:
+    s = s + dicti[i]
+print("Нийлбэр:",s)
